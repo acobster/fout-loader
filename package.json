@@ -1,6 +1,10 @@
 {
   "name": "fout-loader",
-  "version": "0.2.1",
+  "version": "0.3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acobster/fout-loader.git"
+  },
   "description": "A font loader that implements the Flash of Unstyled Text (\"FOUT with a class\") algorithm",
   "main": "index.js",
   "scripts": {

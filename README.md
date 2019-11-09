@@ -25,13 +25,32 @@ fout({
 })
 ```
 
-The `fout()` function returns the Promise returned by Font Face Observer, so if you want to do anything extra, you can do so in a `then()` callback:
+### On-font-loaded callback
+
+The `fout()` function returns the Promise returned by Font Face Observer, so if you want to do anything extra once your font has loaded, you can do so in a `then()` callback:
 
 ```js
 fout({ /* ... */ }).then(() => {
   console.log('did some other stuff')
 })
 ```
+
+### Loading multiple fonts
+
+Just like with Font Face Observer, you can simply call it multiple times. It's just a function, so you don't need to instantiate anything:
+
+```js
+fout({
+  fontName: 'Lato',
+  fontLoadedClass: 'Lato',
+})
+fout({
+  fontName: 'Lora',
+  fontLoadedClass: 'Lora',
+})
+```
+
+### Avoiding shifting text
 
 To avoid jarring shifts in the rendered text as the font changes, I _highly_ recommend you check out the awesome [Font Style Matcher](https://meowni.ca/font-style-matcher/) by Monica Dinculescu. Using this tool, you can hone in a good fallback style to apply to a system font while your web font loads. It only takes a couple minutes of fiddling, and it's actually pretty fun to play with!
 
