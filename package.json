@@ -1,0 +1,23 @@
+{
+  "name": "fout-loader",
+  "version": "0.2.1",
+  "description": "A font loader that implements the Flash of Unstyled Text (\"FOUT with a class\") algorithm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Coby Tamayo <acobster@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fontfaceobserver": "^2.1.0"
+  },
+  "keywords": [
+    "fontloader",
+    "fonts",
+    "font",
+    "font-face",
+    "web font",
+    "font load",
+    "font events"
+  ]
+}
