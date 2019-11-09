@@ -68,6 +68,8 @@ Once you arrive at a good combination of fallback/web font styles, apply them in
 .merriweather-loaded .copy-text-selector {
   font-family: Merriweather;
   line-height: 1.6;
+  letter-spacing: 0;
+  word-spacing: 0;
 }
 ```
 
