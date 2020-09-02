@@ -73,6 +73,10 @@ Once you arrive at a good combination of fallback/web font styles, apply them in
 }
 ```
 
+## Inspiration
+
+Inspired by Glenn Maddern AKA Front End Center's video, [Crafting Webfont Fallbacks](https://www.youtube.com/watch?v=tO01ul1WNW8) and especially by the follow-up video about how browser caching affects webfont performance. (NOTE: The follow-up video is subscription only, but it's well worth it. :D)
+
 ## Caveats
 
 * Even if fonts are cached, instantaneous web font renders rely on `localStorage` being available. If `localStorage` is not available or the key for a given font has been deleted for any reason, FOUT Loader will fall back to loading the font over the network, resulting in a FOUT. This is the case even if the font is actually cached: the key word here is _heuristic_, the technical term for "pretty good indicator."
